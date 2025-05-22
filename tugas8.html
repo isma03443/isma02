@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Utama</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #FFB6C1, #ffe6e9);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+            font-size: 36px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .menu a {
+            padding: 15px 30px;
+            background: rgba(255, 255, 255, 0.3);
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .menu a:hover {
+            transform: translateY(-5px) scale(1.05);
+            background: rgba(255, 255, 255, 0.5);
+            color: #FF69B4;
+        }
+
+        @media (max-width: 600px) {
+            .menu a {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🌸 Selamat Datang di Menu Utama 🌸</h1>
+
+    <div class="menu">
+        <a href="file:///D:/New%20folder/biodata.html">🏠 Beranda</a>
+        <a href="file:///D:/New%20folder/biodata2.html">👤 Biodata</a>
+        <a href="file:///D:/New%20folder/biodata3.html">📞 Kontak</a>
+        <a href="file:///D:/New%20folder/biodata5.html">🖼️ Galeri</a>
+
+    </div>
+
+</body>
+</html>
