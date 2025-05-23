@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Foto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #FFB6C1, #FFD1DC);
+      color: #333;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 40px;
+      font-size: 36px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.6);
+      color: #FF1493;
+      width: 100%;
+      text-align: center;
+      padding: 8px 0;
+      font-weight: bold;
+      font-size: 14px;
+      backdrop-filter: blur(5px);
+    }
+
+    .back-button {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .back-button a {
+      text-decoration: none;
+      background: #FF69B4;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .back-button a:hover {
+      background: #ff85c1;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🖼️ Galeri Foto</h1>
+
+  <div class="gallery">
+    <!-- Contoh item galeri -->
+    <div class="gallery-item">
+      <img src="D:/isma/isma.jpeg" alt="Foto 1">
+      <div class="overlay">Foto 1</div>
+    </div>
+    <div class="gallery-item">
+      <img src="D:/isma/isma25.jpeg" alt="Foto 25">
+      <div class="overlay">Foto 2</div>
+    </div>
+    <div class="gallery-item">
+      <img src="D:/isma/isma26.jpeg" alt="Foto 26">
+      <div class="overlay">Foto 3</div>
+    </div>
+    <div class="gallery-item">
+      <img src="D:/isma/isma02.jpeg" alt="Foto 3">
+      <div class="overlay">Foto 4</div>
+    </div>
+    <div class="gallery-item">
+      <img src="D:/isma/isma03.jpeg" alt="Foto 4">
+      <div class="overlay">Foto 5</div>
+    </div>
+    <!-- Tambahkan lainnya sesuai kebutuhan -->
+    <!-- Contoh item tambahan -->
+    <div class="gallery-item">
+      <img src="D:/isma/isma0.jpeg" alt="Foto 10">
+      <div class="overlay">Foto 6</div>
+    </div>
+    <div class="gallery-item">
+      <img src="D:/isma/isma28.jpeg" alt="Foto 15">
+      <div class="overlay">Foto 7</div>
+    </div>
+    <div class="gallery-item">
+      <img src="D:/isma/isma13.jpeg" alt="Foto 24">
+      <div class="overlay">Foto 8</div>
+    </div>
+    <div class="gallery-item">
+      <img src="D:/isma/isma14.jpeg" alt="Foto 24">
+      <div class="overlay">Foto 9</div>
+    </div>
+    <div class="gallery-item">
+      <img src="D:/isma/isma18.jpeg" alt="Foto 24">
+      <div class="overlay">Foto 10</div>
+    </div>
+    <div class="gallery-item">
+      <img src="D:/isma/isma20.jpeg" alt="Foto 24">
+      <div class="overlay">Foto 11</div>
+    </div>
+    <div class="gallery-item">
+      <img src="D:/isma/isma21.jpeg" alt="Foto 24">
+      <div class="overlay">Foto 12</div>
+    </div>
+    <div class="gallery-item">
+      <img src="D:/isma/isma22.jpeg" alt="Foto 24">
+      <div class="overlay">Foto 13</div>
+    </div>
+    <div class="gallery-item">
+      <img src="D:/isma/isma10.jpeg" alt="Foto 24">
+      <div class="overlay">Foto 14</div>
+    </div>
+    <div class="gallery-item">
+      <img src="D:/isma/isma01.jpeg" alt="Foto 24">
+      <div class="overlay">Foto 15</div>
+    </div>
+    <div class="gallery-item">
+      <img src="D:/isma/isma23.jpeg" alt="Foto 24">
+      <div class="overlay">Foto 16</div>
+    </div>
+    <div class="gallery-item">
+      <img src="D:/isma/isma06.jpeg" alt="Foto 24">
+      <div class="overlay">Foto 17</div>
+    </div>
+    <div class="gallery-item">
+      <img src="D:/isma/isma08.jpeg" alt="Foto 24">
+      <div class="overlay">Foto 18</div>
+    </div>
+    <div class="gallery-item">
+      <img src="D:/isma/isma07.jpeg" alt="Foto 24">
+      <div class="overlay">Foto 24</div>
+    </div>
+    <div class="gallery-item">
+      <img src="D:/isma/isma09.jpeg" alt="Foto 24">
+      <div class="overlay">Foto 24</div>
+    </div>
+    <div class="gallery-item">
+      <img src="D:/isma/isma17.jpeg" alt="Foto 24">
+      <div class="overlay">Foto 24</div>
+    </div>
+    <div class="gallery-item">
+      <img src="D:/isma/isma16.jpeg" alt="Foto 24">
+      <div class="overlay">Foto 24</div>
+    </div>
+    <div class="gallery-item">
+      <img src="D:/isma/isma19.jpeg" alt="Foto 24">
+      <div class="overlay">Foto 24</div>
+    </div>
+    <div class="gallery-item">
+      <img src="D:/isma/isma15.jpeg" alt="Foto 24">
+      <div class="overlay">Foto 24</div>
+    </div>
+    <div class="gallery-item">
+      <img src="D:/isma/isma24.jpeg" alt="Foto 24">
+      <div class="overlay">Foto 24</div>
+    </div>
+    <div class="gallery-item">
+      <img src="D:/isma/isma05.jpeg" alt="Foto 24">
+      <div class="overlay">Foto 24</div>
+    </div>
+    <!-- Tambahkan item lainnya seperti pola di atas -->
+  </div>
+
+  <div class="back-button">
+    <a href="file:///D:/New%20folder/tugas8.html">⬅️ Kembali ke Menu Utama</a>
+  </div>
+
+</body>
+</html>

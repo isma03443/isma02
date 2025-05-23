@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontak</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #FFB6C1, #FFD1DC);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .kontak {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 30px 40px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 450px;
+      color: #fff;
+    }
+
+    .kontak p {
+      font-size: 18px;
+      margin: 12px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .kontak p strong {
+      width: 110px;
+      display: inline-block;
+      color: #ffeef1;
+    }
+
+    .kontak p::before {
+      content: "📧";
+      margin-right: 10px;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .kontak p:nth-child(2)::before {
+      content: "📱";
+    }
+
+    .kontak p:nth-child(3)::before {
+      content: "📷";
+    }
+
+    .kontak p:nth-child(4)::before {
+      content: "🎵";
+    }
+
+    a.kembali {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #fff;
+      color: #FF69B4;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+
+    a.kembali:hover {
+      background-color: #FF69B4;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      .kontak {
+        padding: 25px;
+      }
+
+      .kontak p {
+        font-size: 16px;
+      }
+
+      .kontak p strong {
+        width: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📞 Kontak Saya</h1>
+
+  <div class="kontak">
+    <p><strong>Email:</strong> isma60425@gmail.com</p>
+    <p><strong>Telepon:</strong>  0857 5637 1901</p>
+    <p><strong>Instagram:</strong> @ismmaa_aa</p>
+    <p><strong>TikTok:</strong> @ismaa_aa21</p>
+  </div>
+
+  <a class="kembali" href="file:///D:/New%20folder/biodata5.html"> Ke Menu Selanjutnya</a>
+
+</body>
+</html>
